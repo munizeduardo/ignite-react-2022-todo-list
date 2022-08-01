@@ -1,0 +1,122 @@
+.mainContainer {
+    max-width: 46rem;
+    margin: -60px auto 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.placeholderWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.placeholderText {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.taskForm {
+    display: flex;
+    justify-content: center;
+    max-width: 46rem;
+    gap: 0.5rem;
+    margin-bottom: 10.5rem;
+    height: 3.375rem;
+}
+
+.taskForm input {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    border: 0;
+    padding: 1rem;
+    border-radius: 8px;
+    resize: none;
+    background: var(--gray-500);
+    color: var(--gray-200);
+}
+
+.taskForm input:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.taskForm button {
+    display: flex;
+    background: var(--blue-500);
+    color: var(--gray-100);
+    padding: 1rem;
+    gap: 0.5rem;
+    border: 0;
+    border-radius: 8px;
+    align-items: center;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.taskForm button:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.taskForm button svg {
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+.tasksStatus {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+}
+
+.tasksStatus {
+    font-size: 0.875rem;
+    font-weight: 700;
+}
+
+.tasksStatus div {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--gray-200);
+    max-height: 1.1875rem;
+}
+
+.tasksStatus span {
+    display: flex;
+    justify-content: center;
+    background-color: var(--gray-400);
+    min-width: 1rem;
+    padding: 0.125rem 0.5rem;
+    border-radius: 16px;
+}
+
+.totalCreatedTasks p {
+    color: var(--blue-500);
+}
+
+.totalCompletedTasks p {
+    color: var(--purple-500);
+}
+
+.createdTask {
+    display: flex;
+    background: var(--gray-500);
+    border: 1px solid var(--gray-400);
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.06);
+    border-radius: 8px;
+}
+
+.createdTask + .createdTask {
+    margin-top: 12px;
+}
+
+.tasks li {
+    display: flex;
+    justify-content: space-between;
+}

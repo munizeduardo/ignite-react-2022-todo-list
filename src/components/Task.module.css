@@ -1,0 +1,66 @@
+.taskWrapper {
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 0.75rem;
+    margin: 1rem;
+}
+
+.taskWrapper input[type="checkbox"] {
+    display: none;
+}
+
+.checkboxWrapper input + label:before {
+    box-sizing: border-box;
+    content: '';
+    display: block;
+    width: 1.25rem;
+    height: 1.25rem;
+    border-radius: 50%;
+    border: 2px solid var(--blue-500);
+    transition: .3s ease background-color;
+    cursor: pointer;
+}
+
+.checkboxWrapper input:checked + label:before {
+    background-color: var(--purple-700);
+    border-color: var(--purple-700);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-position: center center;
+    transition: .3s ease background-color;
+    background-image: url("data:image/svg+xml,%3Csvg width='10'   height='16' viewBox='0 0 10 7' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8.43059 0.342154L4.09865 4.67409L1.61618 2.19162L0.780273 3.02753L4.09865 6.3459L9.26649 1.17806L8.43059 0.342154Z' fill='%23F2F2F2'/%3E%3C/svg%3E ");
+}
+
+.taskWrapper p {
+    flex: 1;
+}
+
+.taskText {
+    color: var(--gray-100);
+}
+
+.taskTextDone {
+    text-decoration: line-through;
+    color: var(--gray-300);
+}
+
+.taskWrapper button {
+    background: transparent;
+    border: 0;
+    color: var(--gray-300);
+    cursor: pointer;
+    line-height: 0;
+    border-radius: 4px;
+}
+
+.taskWrapper button:hover {
+    color: var(--red-500);
+}
+
+.taskWrapper button:focus {
+    outline: none;
+    drop-shadow: none;
+}
